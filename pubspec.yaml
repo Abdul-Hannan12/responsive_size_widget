@@ -1,10 +1,13 @@
 name: responsive_size_widget
-description: A new Flutter package project.
+description: A Flutter package that simplifies creating responsive layouts by providing easy-to-use widgets and functions for sizing based on screen dimensions.
 version: 0.0.1
-homepage:
+homepage: https://github.com/Rocky-Khan/responsive_size_widget
+repository: https://github.com/Rocky-Khan/responsive_size_widget.git
+#documentation: https://pub.dev/documentation/responsive_size_widget/latest/
+license: MIT
 
 environment:
-  sdk: '>=2.19.5 <3.0.0'
+  sdk: ">=2.19.5 <3.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
