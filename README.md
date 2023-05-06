@@ -40,6 +40,27 @@ Wrap your widget with the Responsive widget like so:
 
 This will display the appropriate widget based on the current screen size.
 
+### Example 1: Basic Usage
+
+```dart
+    import 'package:flutter/material.dart';
+    import 'package:responsive_size_widget/responsive_size_widget.dart';
+
+    class MyHomePage extends StatelessWidget {
+        @override
+        Widget build(BuildContext context) {
+            return Scaffold(
+                body: Responsive(
+                    largeScreen: Center(child: Text('Large Screen')),
+                    mediumScreen: Center(child: Text('Medium Screen')),
+                    smallScreen: Center(child: Text('Small Screen')),
+                ),
+            );
+        }
+    }
+
+```
+
 ### Example 2: Checking for Screen Size
 
 ```dart
