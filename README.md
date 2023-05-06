@@ -40,6 +40,82 @@ Wrap your widget with the Responsive widget like so:
 
 This will display the appropriate widget based on the current screen size.
 
+### Example 2: Checking for Screen Size
+
+```dart
+    import 'package:flutter/material.dart';
+    import 'package:responsive_size_widget/responsive_size_widget.dart';
+
+    class MyHomePage extends StatelessWidget {
+        @override
+        Widget build(BuildContext context) {
+            return Scaffold(
+                body: Container(
+                    child: Center(
+                        child: Text(
+                            Responsive.isLargeScreen(context)
+                                ? 'Large Screen'
+                                : Responsive.isMediumScreen(context)
+                                    ? 'Medium Screen'
+                                    : 'Small Screen',
+                        ),
+                    ),
+                ),
+            );
+        }
+    }
+
+```
+
+### Example 3: Using Max Width
+
+```dart
+    import 'package:flutter/material.dart';
+    import 'package:responsive_size_widget/responsive_size_widget.dart';
+
+    class MyHomePage extends StatelessWidget {
+        @override
+        Widget build(BuildContext context) {
+            return Scaffold(
+                body: Container(
+                    child: Center(
+                        child: Text(
+                            Responsive.maxWidth(context, 500)
+                                ? 'Screen width is less than or equal to 500'
+                                : 'Screen width is greater than 500',
+                        ),
+                    ),
+                ),
+            );
+        }
+    }
+
+
+```
+
+### Example 4: Using Percent Width
+
+```dart
+    import 'package:flutter/material.dart';
+    import 'package:responsive_size_widget/responsive_size_widget.dart';
+
+    class MyHomePage extends StatelessWidget {
+        @override
+        Widget build(BuildContext context) {
+            return Scaffold(
+                body: Container(
+                    child: Center(
+                        child: Text(
+                            '50% of screen width is ${Responsive.percentWidth(context, 50)}',
+                        ),
+                    ),
+                ),
+            );
+        }
+    }
+
+```
+
 ### Contributing
 
 If you find a bug or want to suggest a feature, please open an issue. Contributions are also welcome! If you want to contribute code, please fork the repository and submit a pull request.
