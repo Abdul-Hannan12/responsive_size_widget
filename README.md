@@ -20,7 +20,7 @@ dependencies:
 
 Then run flutter pub get to install the package.
 
-### Usage
+## Usage
 
 Import the package using:
 
@@ -137,10 +137,10 @@ This will display the appropriate widget based on the current screen size.
 
 ```
 
-### Contributing
+## Contributing
 
 If you find a bug or want to suggest a feature, please open an issue. Contributions are also welcome! If you want to contribute code, please fork the repository and submit a pull request.
 
-### License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
