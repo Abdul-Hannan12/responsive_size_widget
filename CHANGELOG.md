@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.0.0] - 2023-05-05
+## [0.0.1] - 2023-05-05
 
 - Initial release of the package
 - Added the `Responsive` widget for building responsive Flutter applications
